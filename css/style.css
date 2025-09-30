@@ -1,0 +1,443 @@
+/* css/style.css */
+
+/* --- 1. Global Setup & Variables --- */
+:root {
+    --dark-bg: #24292e;
+    --card-bg: #2b3137;
+    --text-white: #ffffff;
+    --text-light: #fafbfc;
+    --accent-green: #2dba4e;
+    --font-family: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    min-height: 100vh;
+}
+
+/* --- 2. Main Layout Container --- */
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* --- 3. Glassmorphism Navbar --- */
+.navbar-glass {
+    position: fixed;
+    z-index: 1000;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 48px);
+    max-width: 1240px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    
+    background: rgba(43, 49, 55, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+
+    animation: slideDownFadeIn 0.8s ease-out forwards;
+    transition: background 0.4s ease, backdrop-filter 0.4s ease, box-shadow 0.4s ease;
+}
+
+.navbar-glass.navbar-scrolled {
+    background: rgba(43, 49, 55, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-white);
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-link i {
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- 4. Header & Hero Section --- */
+.hero {
+    text-align: center;
+    padding: 140px 0 80px; 
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1.2;
+    color: var(--text-white);
+}
+
+.hero-content .subtitle {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--text-light);
+    max-width: 650px;
+    margin: 0 auto 32px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-green);
+    color: var(--text-white);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 50px;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    background-color: #31d858;
+}
+
+/* --- 5. Main Content & Contributors Section --- */
+main {
+    padding-bottom: 80px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-white);
+    opacity: 0;
+    animation: fadeInUp 0.8s 0.2s ease-out forwards;
+}
+
+#contributors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contributor-card.hidden {
+    display: none !important;
+}
+
+.contributor-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    width: 580px;
+    border: 1px solid #444c56;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+    opacity: 0;
+    animation: card-appear 0.5s ease-out forwards;
+}
+
+.contributor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.profile-image {
+    width: 160px;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 16px;
+    flex-shrink: 0;
+    transition: opacity 0.4s ease-in-out;
+    background-color: var(--dark-bg);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.card-content h3 {
+    margin: 0 0 4px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-white);
+    line-height: 1.2;
+}
+
+.card-content .username {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-bottom: 16px;
+    opacity: 0.8;
+}
+
+.card-content .bio {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.card-content .stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    gap: 10px;
+}
+
+.card-content .stat-item {
+    text-align: center;
+}
+
+.card-content .stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-white);
+    display: block;
+}
+
+.card-content .stat-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-light);
+    opacity: 0.8;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.card-button {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #373e47;
+    color: var(--text-light);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: var(--accent-green);
+    color: var(--text-white);
+    transform: translateY(-2px);
+}
+
+.card-button.view-project {
+    background-color: var(--accent-green);
+    color: var(--text-white);
+}
+.card-button.view-project:hover {
+    background-color: #31d858;
+}
+
+/* --- 6. Footer --- */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid var(--card-bg);
+    color: var(--text-light);
+    opacity: 0.8;
+}
+
+/* --- 7. Responsive Design --- */
+@media (max-width: 1220px) {
+    .contributor-card {
+        width: 100%;
+        max-width: 580px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-glass {
+        flex-direction: column;
+        gap: 16px;
+        width: calc(100% - 32px);
+        top: 16px;
+    }
+    .hero {
+        padding: 180px 0 40px;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .contributor-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+        gap: 16px;
+    }
+    .profile-image {
+        width: 120px;
+        height: 120px;
+        flex-shrink: 0;
+    }
+    .card-content {
+        align-self: auto;
+        width: 100%;
+    }
+    .card-content h3 {
+        font-size: 1.4rem;
+    }
+    .card-content .username {
+        margin-bottom: 12px;
+    }
+    .card-content .bio {
+        flex-grow: 0;
+        margin-bottom: 20px;
+        -webkit-line-clamp: 3;
+    }
+    .card-content .stats {
+        justify-content: space-around;
+        margin-bottom: 24px;
+    }
+    .card-content .stat-value {
+        font-size: 1.3rem;
+    }
+    .card-buttons {
+        flex-direction: column;
+    }
+}
+
+/* --- 8. Loader & Animations --- */
+#loader {
+    width: 60px;
+    height: 60px;
+    border: 5px solid var(--card-bg);
+    border-top-color: var(--accent-green);
+    border-radius: 50%;
+    margin: 50px auto;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes card-appear { from { opacity: 0; transform: scale(0.95) translateY(10px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+@keyframes slideDownFadeIn { from { opacity: 0; transform: translate(-50%, -100px); } to { opacity: 1; transform: translate(-50%, 0); } }
+
+/* --- 9. Load More & Search --- */
+#load-more-container {
+    display: none;
+    text-align: center;
+    margin-top: 40px;
+}
+#load-more-button:disabled {
+    background-color: var(--card-bg);
+    color: var(--text-light);
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+.search-container {
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: var(--card-bg);
+    border-radius: 50px;
+    padding: 8px 8px 8px 20px;
+    border: 1px solid #444c56;
+    transition: box-shadow 0.3s ease;
+}
+.search-bar:focus-within {
+    box-shadow: 0 0 0 3px var(--accent-green-transparent, #2dba4e4a);
+    border-color: var(--accent-green);
+}
+.search-icon {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    opacity: 0.7;
+    margin-right: 12px;
+}
+#search-input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-light);
+    font-size: 1rem;
+    font-family: var(--font-family);
+}
+#search-input::placeholder {
+    color: var(--text-light);
+    opacity: 0.5;
+}
+.search-button {
+    background: var(--accent-green);
+    border: none;
+    border-radius: 50%;
+    color: var(--text-white);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+.search-button:hover {
+    background-color: #31d858;
+}
