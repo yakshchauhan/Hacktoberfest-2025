@@ -124,9 +124,11 @@ To ensure a high-quality showcase and a positive experience for everyone, please
 A huge thank you to all the wonderful people who have contributed to this project! This section will automatically update as we merge new pull requests.
 
 [![Contributors](https://contrib.rocks/image?repo=withaarzoo/Hacktoberfest2025)](https://github.com/withaarzoo/Hacktoberfest2025/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=dsawithaditi/Hacktoberfest2025)](https://github.com/dsawithaditi/Hacktoberfest2025/graphs/contributors)
 
 ## License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 Thank you for your contribution! **Happy Hacking!** 🚀
+
