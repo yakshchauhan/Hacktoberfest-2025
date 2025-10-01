@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #111827; /* Dark background */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.input-container {
+    position: relative;
+    width: 300px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #ffffff; /* White text */
+    border: none;
+    border-bottom: 2px solid #4b5563; /* Gray bottom border */
+    outline: none;
+    background: transparent;
+    position: relative;
+    z-index: 1; /* Ensure input is above the animated line */
+}
+
+.input-label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 18px;
+    color: #9ca3af; /* Lighter gray for label */
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 0;
+}
+
+/* The animation magic:
+  - When the input is focused OR not empty, the label floats up.
+  - The :not(:placeholder-shown) selector is a clever trick to detect if the input has content.
+    For this to work, the placeholder in the HTML must not be empty (we used " ").
+*/
+.input-field:focus + .input-label,
+.input-field:not(:placeholder-shown) + .input-label {
+    top: -20px;
+    font-size: 14px;
+    color: #818cf8; /* Vibrant color on focus */
+}
+
+/* The wave animation element */
+.input-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #6A82FB, #FC5C7D, #5de6de, #6A82FB);
+    background-size: 200% 200%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    animation: wave-animation 2s linear infinite paused;
+}
+
+/* Trigger the animations on focus */
+.input-field:focus ~ .input-container::after,
+.input-field:focus::after {
+    transform: scaleX(1);
+    animation-play-state: running; /* Start the wave animation */
+}
+
+
+@keyframes wave-animation {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
