@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0f172a;
+}
+
+.animated-loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    --animation-duration: 2.5s;
+}
+
+.bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 40px;
+    background-color: #818cf8;
+    border-radius: 5px;
+    transform-origin: bottom center;
+    animation: gemini-orbit var(--animation-duration) linear infinite;
+}
+
+.bar-1 {
+    transform: rotate(0deg);
+    animation-delay: calc(var(--animation-duration) * -0.75);
+}
+
+.bar-2 {
+    transform: rotate(90deg);
+    animation-delay: calc(var(--animation-duration) * -0.5);
+}
+
+.bar-3 {
+    transform: rotate(180deg);
+    animation-delay: calc(var(--animation-duration) * -0.25);
+}
+
+.bar-4 {
+    transform: rotate(270deg);
+    animation-delay: calc(var(--animation-duration) * 0);
+}
+
+@keyframes gemini-orbit {
+    0% {
+        transform: rotate(0deg) scaleY(0);
+        opacity: 0;
+    }
+    10% {
+        transform: rotate(0deg) scaleY(1);
+        opacity: 1;
+    }
+    80% {
+        transform: rotate(360deg) scaleY(1);
+        opacity: 1;
+    }
+    90% {
+        transform: rotate(360deg) scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(360deg) scaleY(0);
+        opacity: 0;
+    }
+}
