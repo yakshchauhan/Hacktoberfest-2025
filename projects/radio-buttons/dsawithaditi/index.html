@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Animated Minimalist Radio Buttons</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+</head>
+
+<body>
+    <div class="card">
+        <h1>Pick a tone</h1>
+        <p>Animated minimalist radio buttons — keyboard-accessible, subtle motion and a tiny click ripple.</p>
+
+        <form aria-label="Sound presets">
+            <div class="radio-group" role="radiogroup" aria-labelledby="rg-label">
+
+                <input class="radio-input" type="radio" id="opt-1" name="tone" value="soft" checked>
+                <label class="radio" for="opt-1" tabindex="0">
+                    <span class="track" aria-hidden="true">
+                        <span class="dot"></span>
+                    </span>
+                    <span>
+                        <span class="label-text">Soft</span>
+                        <span class="sublabel">Warm & smooth</span>
+                    </span>
+                </label>
+
+                <input class="radio-input" type="radio" id="opt-2" name="tone" value="bright">
+                <label class="radio" for="opt-2" tabindex="0">
+                    <span class="track" aria-hidden="true">
+                        <span class="dot"></span>
+                    </span>
+                    <span>
+                        <span class="label-text">Bright</span>
+                        <span class="sublabel">Crisp & clear</span>
+                    </span>
+                </label>
+
+                <input class="radio-input" type="radio" id="opt-3" name="tone" value="neutral">
+                <label class="radio" for="opt-3" tabindex="0">
+                    <span class="track" aria-hidden="true">
+                        <span class="dot"></span>
+                    </span>
+                    <span>
+                        <span class="label-text">Neutral</span>
+                        <span class="sublabel">Balanced</span>
+                    </span>
+                </label>
+
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
