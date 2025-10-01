@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Setup */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    transition: background-color 0.8s ease;
+}
+
+.container {
+    padding: 40px;
+    border-radius: 25px;
+    transition: background-color 0.8s ease;
+}
+
+.hidden-input {
+    display: none;
+}
+
+/* The Toggle Switch */
+.toggle-switch {
+    position: relative;
+    display: block;
+    width: 160px;
+    height: 80px;
+    background-color: #87CEEB; /* Day Sky Color */
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.8s ease;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* The Sliding Thumb (Sun/Moon Container) */
+.toggle-thumb {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 70px;
+    height: 70px;
+    background-color: #FFD700; /* Sun Color */
+    border-radius: 50%;
+    transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55), background-color 0.8s ease;
+    z-index: 2;
+}
+
+/* Sun and its Rays */
+.sun {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.ray {
+    position: absolute;
+    background-color: #FFD700;
+    width: 6px;
+    height: 20px;
+    border-radius: 3px;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 0;
+    animation: rotate-rays 10s linear infinite;
+}
+.ray:nth-child(1) { transform: translate(-50%, -50%) rotate(0deg) translateY(-25px); }
+.ray:nth-child(2) { transform: translate(-50%, -50%) rotate(45deg) translateY(-25px); }
+.ray:nth-child(3) { transform: translate(-50%, -50%) rotate(90deg) translateY(-25px); }
+.ray:nth-child(4) { transform: translate(-50%, -50%) rotate(135deg) translateY(-25px); }
+
+/* Moon */
+.moon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #E6E6FA; /* Moon Color */
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    box-shadow: inset -15px 0 0 0 #C0C0C0; /* Crescent Shadow */
+}
+
+/* Stars */
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.8s ease;
+}
+.star.s1 { top: 20px; left: 120px; width: 6px; height: 6px; }
+.star.s2 { top: 45px; left: 135px; width: 4px; height: 4px; }
+.star.s3 { top: 30px; left: 100px; width: 5px; height: 5px; }
+
+
+/* --- CHECKED STATE --- */
+
+#theme-toggle:checked + .toggle-switch {
+    background-color: #000080; /* Night Sky Color */
+}
+
+#theme-toggle:checked + .toggle-switch .toggle-thumb {
+    transform: translateX(80px);
+    background-color: transparent;
+}
+
+#theme-toggle:checked + .toggle-switch .sun {
+    opacity: 0;
+}
+
+#theme-toggle:checked + .toggle-switch .moon {
+    opacity: 1;
+}
+
+#theme-toggle:checked + .toggle-switch .star {
+    opacity: 1;
+    transform: scale(1);
+    animation: twinkle 2s ease-in-out infinite;
+}
+.star.s2 { animation-delay: 0.5s; }
+.star.s3 { animation-delay: 1s; }
+
+/* --- ANIMATIONS --- */
+
+@keyframes rotate-rays {
+    from { transform: translate(-50%, -50%) rotate(0deg) translateY(-25px); }
+    to { transform: translate(-50%, -50%) rotate(360deg) translateY(-25px); }
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}

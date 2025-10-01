@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.github-btn {
+  background-color: #fff;
+  border: 1px solid #d1d5db; /* GitHub's grey border */
+  padding: 5px;
+  position: relative;
+  width: 8em;
+  height: 2.5em;
+  transition: 0.3s ease-in-out;
+  font-size: 17px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.github-btn p {
+  position: absolute;
+  top: 0.5em;
+  left: 1.8em;
+  margin: 0;
+  padding: 0;
+  transition: .3s ease-in-out;
+  color: #181717; /* Dark text */
+  font-weight: 500;
+}
+
+.github-btn svg {
+  position: absolute;
+  top: 0.6em;
+  right: 1.2em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  height: 1.2em;
+  width: 1.2em;
+  fill: #fff;
+}
+
+.github-btn:hover {
+  background-color: #181717; /* GitHub's primary dark color */
+  border-color: #181717;
+}
+
+.github-btn:hover p {
+  left: 0.8em;
+  color: #fff;
+}
+
+.github-btn:hover svg {
+  opacity: 1;
+  right: 0.8em;
+}
