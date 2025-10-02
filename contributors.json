@@ -18,10 +18,18 @@
   {
     "name": "Nusrat Jahan",
     "occupation": "Frontend Web Developer",
-    "place": "Maharashtra, India",
+    "place": "Chennai, India",
     "bio": "Frontend developer focused on clean code, pixel-perfect UIs, and seamless user experiences.",
     "github_profile_url": "https://github.com/nusrat80",
     "project_netlify_link": "https://nusrat-button.netlify.app/"
+  },
+  {
+    "name": "Nusrat Jahan",
+    "occupation": "Frontend Web Developer",
+    "place": "Chennai, India",
+    "bio": "Frontend developer focused on clean code, pixel-perfect UIs, and seamless user experiences.",
+    "github_profile_url": "https://github.com/nusrat80",
+    "project_netlify_link": "https://nusrat-checkbox.netlify.app/"
   },
   {
     "name": "Rumi",
