@@ -342,5 +342,13 @@
     "bio": "I'm an Applied Innovator and Google Student Ambassador with a strong foundation in full-stack development, IoT, and deep learning. My passion is translating complex research into scalable, real-world solutions. I thrive on teaching, leading technical teams, and driving projects that bridge technology with social good.",
     "github_profile_url": "https://github.com/shahjash1634",
     "project_netlify_link": "https://storm-switch.netlify.app/"
+  },
+  {
+    "name": "Ankit Jha",
+    "occupation": "Software Developer at juspay.in",
+    "place": "India",
+    "bio": "Passionate full-stack developer with expertise in modern web technologies. Love creating beautiful UI components and contributing to open source projects during Hacktoberfest!",
+    "github_profile_url": "https://github.com/ankit6686510",
+    "project_netlify_link": "https://glassmorphism-buttons-ankit.netlify.app/"
   }
 ]
