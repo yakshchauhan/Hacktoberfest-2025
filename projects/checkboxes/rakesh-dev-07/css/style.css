@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #f0f2f5;
+    --icon-default: #b0b3b8;
+    --icon-hover: #525252;
+    --icon-checked: #007bff;
+    --transition-duration: 0.4s;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background);
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.container svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    fill: var(--icon-default);
+    border-radius: 50%;
+    transition:
+        transform var(--transition-duration) cubic-bezier(0.18, 0.89, 0.32, 1.28),
+        fill var(--transition-duration) ease;
+}
+
+.container:hover svg {
+    transform: scale(1.15);
+    fill: var(--icon-hover);
+}
+
+.container input:checked ~ svg {
+    fill: var(--icon-checked);
+    transform: scale(1.2) rotate(12deg);
+    animation: radiate 0.6s ease-out;
+}
+
+@keyframes radiate {
+    0% {
+        box-shadow: 0 0 0 0px hsla(211, 100%, 50%, 0.3);
+    }
+    80% {
+        box-shadow: 0 0 0 30px hsla(211, 100%, 50%, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 30px hsla(211, 100%, 50%, 0);
+    }
+}
