@@ -342,5 +342,13 @@
     "bio": "I'm an Applied Innovator and Google Student Ambassador with a strong foundation in full-stack development, IoT, and deep learning. My passion is translating complex research into scalable, real-world solutions. I thrive on teaching, leading technical teams, and driving projects that bridge technology with social good.",
     "github_profile_url": "https://github.com/shahjash1634",
     "project_netlify_link": "https://storm-switch.netlify.app/"
+  },
+  {
+    "name": "Anish Kalbhor",
+    "occupation": "Full Stack Developer",
+    "place": "Mumbai, India",
+    "bio": "I'm a Full Stack Developer with a strong foundation in web development, IoT, and deep learning. My passion is translating complex research into scalable, real-world solutions. I thrive on teaching, leading technical teams, and driving projects that bridge technology with social good.",
+    "github_profile_url": "https://github.com/anishvkalbhor",
+    "project_netlify_link": "https://magic-toggle.netlify.app/"
   }
 ]
