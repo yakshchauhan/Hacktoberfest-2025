@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #eef1f5;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.radio-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(106, 130, 251, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-title {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.radio-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.radio-input label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease;
+}
+
+.radio-input input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #d1d5db;
+    display: grid;
+    place-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.radio-input input[type="radio"]::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #6a82fb;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.radio-input .text {
+    color: #555;
+    font-weight: 400;
+    transition: font-weight 0.3s ease;
+}
+
+.radio-input input[type="radio"]:checked {
+    border-color: #6a82fb;
+}
+
+.radio-input input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+.radio-input input[type="radio"]:checked + .text {
+    color: #0d1a62;
+    font-weight: 600;
+}
+
+.radio-input label:hover input[type="radio"] {
+    border-color: #a4b1fb;
+}
+
+.selection {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: #f0f2ff;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: top 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.radio-input label:has(input[value="value-1"]:checked) ~ .selection {
+    top: 0;
+}
+
+.radio-input label:has(input[value="value-2"]:checked) ~ .selection {
+    top: 60px;
+}
+
+.radio-input label:has(input[value="value-3"]:checked) ~ .selection {
+    top: 120px;
+}
