@@ -1,0 +1,117 @@
+/* Importing a modern font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Modern Body Styling with a dark, subtle background */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: radial-gradient(circle, #5a3f3f, #1a1a1a);
+    overflow: hidden;
+}
+
+/* Card container - sets up the 3D space */
+.card {
+  width: 350px;
+  height: 220px;
+  perspective: 1500px; /* Increased perspective for a more dramatic 3D effect */
+  transition: transform 0.4s ease-in-out;
+}
+
+/* On hover, the card lifts up and glows */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* The inner container that actually flips */
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s cubic-bezier(0.7, 0, 0.3, 1); /* Smoother, more dynamic transition */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+/* Triggering the flip animation on hover */
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Common styles for both front and back of the card */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hides the back of the element when it's not facing the screen */
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /* Beautiful saffron/orange gradient */
+  background: linear-gradient(135deg, #FFB74D, #FF9800);
+}
+
+/* Styling for the front of the card */
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.om-symbol {
+    font-size: 120px;
+    font-weight: 600;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the back of the card */
+.card-back {
+  background: linear-gradient(135deg, #FF9800, #F57C00);
+  transform: rotateY(180deg);
+  flex-direction: column;
+  padding: 20px;
+}
+
+.back-content {
+    text-align: center;
+    /* This content will fade in after the flip */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 0.5s; /* 0.5s delay to wait for the flip */
+}
+
+/* The content becomes visible after the card has flipped */
+.card:hover .back-content {
+    opacity: 1;
+}
+
+.back-content h2 {
+    margin-bottom: 5px;
+}
+
+.back-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 12px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #ffe0b2; /* A lighter shade for hover effect */
+}
