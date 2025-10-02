@@ -32,6 +32,54 @@
     "project_netlify_link": "https://rakesh-button.netlify.app/"
   },
   {
+    "name": "Soumik Nandan",
+    "occupation": "SEO Specialist",
+    "place": "Beldanga, India",
+    "bio": "SEO Specialist with 3 years of experience driving organic growth and improving search visibility. Focused on the technical backbone of SEO, data analysis, and content strategy to enhance website performance and user experience.",
+    "github_profile_url": "https://github.com/seobysoumik",
+    "project_netlify_link": "https://soumik-button.netlify.app/"
+  },
+  {
+    "name": "Tushar Kumar",
+    "occupation": "Full-Stack Web Developer",
+    "place": "Chennai, India",
+    "bio": "Creating engaging and user-friendly web experiences.",
+    "github_profile_url": "https://github.com/Tusharkumar200",
+    "project_netlify_link": "https://neon-button-component.netlify.app/"
+  },
+  {
+    "name": "Rumi",
+    "occupation": "Full-Stack Web Developer",
+    "place": "Mumbai, India",
+    "bio": "passionate about crafting clean code, scalable systems, and intuitive user experiences.",
+    "github_profile_url": "https://github.com/rumi20",
+    "project_netlify_link": "https://rumi-button.netlify.app/"
+  },
+  {
+    "name": "Xaypanya Phongsa",
+    "occupation": "Software Engineer",
+    "place": "Bangkok, Thailand",
+    "bio": "Frontend developer passionate about creating engaging user experiences with modern web technologies.",
+    "github_profile_url": "https://github.com/Xaypanya",
+    "project_netlify_link": "https://neobrutalism-button.netlify.app/"
+  },
+  {
+    "name": "Shivam Kumar",
+    "occupation": "CSE(AI-ML) Student",
+    "place": "Bhilai, India",
+    "bio": "Open-source enthusiast contributing to Hacktoberfest!",
+    "github_profile_url": "https://github.com/Shivambhagatt",
+    "project_netlify_link": "https://shivambhagat-hacktoberfest.netlify.app/"
+  },
+  {
+    "name": "Ritwik Tat",
+    "occupation": "Full Stack Developer",
+    "place": "Maharashtra, India",
+    "bio": "Software Engineer with 3 years of experience in web development. Focused on the technical backbone of SEO, data analysis, and content strategy to enhance website performance and user experience.",
+    "github_profile_url": "https://github.com/ritwik1709",
+    "project_netlify_link": "https://spontaneous-pothos-e6b2c6.netlify.app/"
+  },
+  {
     "name": "Rakesh Sharma",
     "occupation": "Software Engineer at @Paytm",
     "place": "Delhi, India",
@@ -126,14 +174,6 @@
     "bio": "Frontend developer focused on clean code, pixel-perfect UIs, and seamless user experiences.",
     "github_profile_url": "https://github.com/nusrat80",
     "project_netlify_link": "https://nusrat-radio-button.netlify.app/"
-  },
-  {
-    "name": "Rumi",
-    "occupation": "Full-Stack Web Developer",
-    "place": "Mumbai, India",
-    "bio": "passionate about crafting clean code, scalable systems, and intuitive user experiences.",
-    "github_profile_url": "https://github.com/rumi20",
-    "project_netlify_link": "https://rumi-button.netlify.app/"
   },
   {
     "name": "Aditi Sharma",
@@ -245,15 +285,15 @@
     "place": "Beldanga, India",
     "bio": "SEO Specialist with 3 years of experience driving organic growth and improving search visibility. Focused on the technical backbone of SEO, data analysis, and content strategy to enhance website performance and user experience.",
     "github_profile_url": "https://github.com/seobysoumik",
-    "project_netlify_link": "https://soumik-button.netlify.app/"
+    "project_netlify_link": "https://soumik-checkbox.netlify.app/"
   },
   {
-    "name": "Soumik Nandan",
-    "occupation": "SEO Specialist",
-    "place": "Beldanga, India",
-    "bio": "SEO Specialist with 3 years of experience driving organic growth and improving search visibility. Focused on the technical backbone of SEO, data analysis, and content strategy to enhance website performance and user experience.",
-    "github_profile_url": "https://github.com/seobysoumik",
-    "project_netlify_link": "https://soumik-checkbox.netlify.app/"
+    "name": "Ritwik Tat",
+    "occupation": "Full Stack Developer",
+    "place": "Maharashtra, India",
+    "bio": "Software Engineer with 3 years of experience in web development. Focused on the technical backbone of SEO, data analysis, and content strategy to enhance website performance and user experience.",
+    "github_profile_url": "https://github.com/ritwik1709",
+    "project_netlify_link": "https://cute-valkyrie-30c98b.netlify.app/"
   },
   {
     "name": "Soumik Nandan",
