@@ -56,6 +56,14 @@
     "project_netlify_link": "https://abhijeetpatil-loader.netlify.app/"
   },
   {
+    "name": "Abhijeet Patil",
+    "occupation": "Full Stack Developer",
+    "place": "Mumbai, India",
+    "bio": "Crafting playful, interactive UI components with a love for clean code and modern web tech. Always exploring new ways to make the web more fun! 😄",
+    "github_profile_url": "https://github.com/abhijeetpatilrm",
+    "project_netlify_link": "https://abhijeetpatil-radiobutton.netlify.app/"
+  },
+  {
     "name": "Rumi",
     "occupation": "Full-Stack Web Developer",
     "place": "Mumbai, India",
