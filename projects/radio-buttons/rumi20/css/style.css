@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f0eafc; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.radio-input input {
+  display: none;
+}
+
+.radio-input {
+  --container_width: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #fff;
+  color: #5b21b6;
+  width: var(--container_width);
+  overflow: hidden;
+  border: 1px solid #e9d5ff;
+  box-shadow: 0px 8px 24px rgba(93, 33, 182, 0.1);
+}
+
+.radio-input label {
+  width: 100%;
+  padding: 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  font-size: 14px;
+  transition: color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.radio-input label span {
+    position: relative;
+}
+
+.selection {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: calc(var(--container_width) / 3);
+  z-index: 0;
+  left: 0;
+  top: 0;
+  border-radius: 16px;
+  background: linear-gradient(45deg, #c084fc, #9333ea);
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.radio-input label:has(input:checked) {
+  color: #fff;
+}
+
+.radio-input label:has(input:checked) ~ .selection {
+  display: inline-block;
+}
+
+.radio-input label:nth-child(1):has(input:checked) ~ .selection {
+  transform: translateX(calc(var(--container_width) * 0/3));
+}
+
+.radio-input label:nth-child(2):has(input:checked) ~ .selection {
+  transform: translateX(calc(var(--container_width) * 1/3));
+}
+
+.radio-input label:nth-child(3):has(input:checked) ~ .selection {
+  transform: translateX(calc(var(--container_width) * 2/3));
+}
+
+@keyframes sparkle {
+    0% {
+        transform: scale(0) rotate(0deg);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.5) rotate(180deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.radio-input label:has(input:checked) span::before,
+.radio-input label:has(input:checked) span::after {
+    content: '★';
+    position: absolute;
+    font-size: 10px;
+    color: #fde047;
+    opacity: 0;
+    animation: sparkle 0.6s ease-in-out forwards;
+}
+
+.radio-input label:has(input:checked) span::before {
+    top: -10px;
+    left: 50%;
+    animation-delay: 0.1s;
+}
+
+.radio-input label:has(input:checked) span::after {
+    bottom: -10px;
+    left: 20%;
+    animation-delay: 0.2s;
+}
