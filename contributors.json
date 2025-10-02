@@ -174,5 +174,13 @@
     "bio": "Creating engaging and user-friendly web experiences.",
     "github_profile_url": "https://github.com/Tusharkumar200",
     "project_netlify_link": "https://neon-button-component.netlify.app/"
+  },
+  {
+    "name": "Rumi",
+    "occupation": "Full-Stack Web Developer",
+    "place": "Mumbai, India",
+    "bio": "passionate about crafting clean code, scalable systems, and intuitive user experiences.",
+    "github_profile_url": "https://github.com/rumi20",
+    "project_netlify_link": "https://rumi-checkbox.netlify.app/"
   }
 ]

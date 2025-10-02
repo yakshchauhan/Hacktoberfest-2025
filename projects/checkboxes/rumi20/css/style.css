@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5e3ff, #dbeafe);
+    font-family: 'Poppins', sans-serif;
+}
+
+.dream-checkbox {
+  /* --- New Beautiful & Modern Color Theme --- */
+  --primary: #e0aaff;      /* Soft Lavender */
+  --secondary: #a2d2ff;   /* Pastel Blue */
+  --accent: #ffc8dd;      /* Light Pink */
+  --glow: #f8f0ff;        /* Whitish Glow */
+  --text: #ffffff;        /* Checkmark color */
+  --dark-bg: rgba(25, 0, 50, 0.4); /* Unchecked bg */
+
+  --size: 40px; /* Made slightly larger for better interaction */
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dream-checkbox input {
+  display: none;
+}
+
+.dream-checkbox__frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.dream-checkbox__box {
+  position: absolute;
+  inset: 0;
+  background: var(--dark-bg);
+  border-radius: 12px; /* Softer, rounded corners */
+  border: 2px solid var(--primary);
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1); /* Smoother transition */
+}
+
+.dream-checkbox__check-container {
+  position: absolute;
+  inset: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dream-checkbox__check {
+  width: 75%;
+  height: 75%;
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40; /* Hides the checkmark initially */
+  transform-origin: center;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition-delay: 0.1s; /* Draw check after the box fills */
+}
+
+.dream-checkbox__glow {
+  position: absolute;
+  inset: -4px;
+  border-radius: 14px;
+  background: radial-gradient(circle, var(--primary), var(--secondary));
+  opacity: 0;
+  filter: blur(12px);
+  transform: scale(1.1);
+  transition: all 0.6s ease;
+}
+
+/* --- New Huge & Beautiful Animations --- */
+.dream-checkbox__particles span {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--glow);
+  border-radius: 50%; /* Changed to circles for a softer look */
+  opacity: 0;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 0 8px var(--primary);
+}
+
+.dream-checkbox__rings {
+  position: absolute;
+  inset: -20px;
+  pointer-events: none;
+}
+
+.dream-checkbox__rings .ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* --- Hover State --- */
+.dream-checkbox:hover .dream-checkbox__box {
+  border-color: var(--accent);
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--primary);
+}
+
+/* --- Checked State --- */
+.dream-checkbox input:checked ~ .dream-checkbox__frame .dream-checkbox__box {
+  /* Beautiful gradient fill on check */
+  background: linear-gradient(45deg, var(--primary), var(--accent));
+  border-color: var(--accent);
+}
+
+.dream-checkbox input:checked ~ .dream-checkbox__frame .dream-checkbox__check {
+  stroke-dashoffset: 0; /* Draws the checkmark */
+  transform: scale(1.1);
+}
+
+.dream-checkbox input:checked ~ .dream-checkbox__frame .dream-checkbox__glow {
+  opacity: 0.4;
+  transform: scale(1.4);
+}
+
+.dream-checkbox
+  input:checked
+  ~ .dream-checkbox__frame
+  .dream-checkbox__particles
+  span {
+  animation: particleDrift 1s cubic-bezier(0.1, 1, 0.1, 1) forwards;
+}
+
+.dream-checkbox
+  input:checked
+  ~ .dream-checkbox__frame
+  .dream-checkbox__rings
+  .ring {
+  animation: ringPulse 0.8s ease-out forwards;
+}
+
+
+/* --- KEYFRAME ANIMATIONS (The Magic!) --- */
+
+/* New animation for soft, drifting particles instead of an explosion */
+@keyframes particleDrift {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(
+        calc(-50% + var(--x, 0px)),
+        calc(-80% + var(--y, 0px)) /* Drift upwards */
+      )
+      scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes ringPulse {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* Particle Positions & Delays for a more organic feel */
+.dream-checkbox__particles span:nth-child(1) { --x: 35px; --y: -35px; animation-delay: 0.05s; }
+.dream-checkbox__particles span:nth-child(2) { --x: -35px; --y: -35px; animation-delay: 0.1s; }
+.dream-checkbox__particles span:nth-child(3) { --x: 35px; --y: 35px; animation-delay: 0.15s; }
+.dream-checkbox__particles span:nth-child(4) { --x: -35px; --y: 35px; animation-delay: 0.2s; }
+.dream-checkbox__particles span:nth-child(5) { --x: 45px; --y: 0px; animation-delay: 0.08s; }
+.dream-checkbox__particles span:nth-child(6) { --x: -45px; --y: 0px; animation-delay: 0.12s; }
+.dream-checkbox__particles span:nth-child(7) { --x: 0px; --y: 45px; animation-delay: 0.18s; }
+.dream-checkbox__particles span:nth-child(8) { --x: 0px; --y: -45px; animation-delay: 0.22s; }
+.dream-checkbox__particles span:nth-child(9) { --x: 20px; --y: -40px; animation-delay: 0.13s; }
+.dream-checkbox__particles span:nth-child(10) { --x: -20px; --y: 40px; animation-delay: 0.07s; }
+.dream-checkbox__particles span:nth-child(11) { --x: 40px; --y: 20px; animation-delay: 0.16s; }
+.dream-checkbox__particles span:nth-child(12) { --x: -40px; --y: -20px; animation-delay: 0.11s; }
+
+/* Ring Delays */
+.dream-checkbox__rings .ring:nth-child(1) { animation-delay: 0s; }
+.dream-checkbox__rings .ring:nth-child(2) { animation-delay: 0.15s; }
+.dream-checkbox__rings .ring:nth-child(3) { animation-delay: 0.3s; }
