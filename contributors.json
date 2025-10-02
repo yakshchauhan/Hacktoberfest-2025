@@ -54,5 +54,13 @@
     "bio": "Building beautiful and accessible components for the web.",
     "github_profile_url": "https://github.com/dsawithaditi",
     "project_netlify_link": "https://aditi-input.netlify.app/"
+  },
+  {
+    "name": "Xaypanya Phongsa",
+    "occupation": "Software Engineer",
+    "place": "Bangkok, Thailand",
+    "bio": "Frontend developer passionate about creating engaging user experiences with modern web technologies.",
+    "github_profile_url": "https://github.com/Xaypanya",
+    "project_netlify_link": "https://neobrutalism-button.netlify.app/"
   }
 ]
