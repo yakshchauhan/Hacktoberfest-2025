@@ -1,0 +1,100 @@
+:root {
+    --bg-light: #f0f0f0;
+    --bg-dark: #2d3436;
+    --switch-bg-off: #bdc3c7;
+    --switch-bg-on: #3498db;
+    --handle-color: #ffffff;
+    --text-light: #2c3e50;
+    --text-dark: #ecf0f1;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --transition-speed: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-light);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color var(--transition-speed) ease-in-out;
+}
+
+.theme-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 2rem;
+}
+
+h1 {
+    color: var(--text-light);
+    transition: color var(--transition-speed) ease-in-out;
+}
+
+.switch-container {
+    position: relative;
+}
+
+.label {
+    display: block;
+    width: 100px;
+    height: 50px;
+    background-color: var(--switch-bg-off);
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 3px 8px var(--shadow-color);
+    transition:
+        background-color var(--transition-speed) ease-in-out,
+        transform var(--transition-speed) ease;
+}
+
+.label:hover {
+    transform: scale(1.05);
+}
+
+.label::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: var(--handle-color);
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    transition: transform var(--transition-speed) ease-in-out;
+}
+
+#checkbox {
+    display: none;
+}
+
+#checkbox:checked ~ .label {
+    background-color: var(--switch-bg-on);
+}
+
+#checkbox:checked ~ .label::before {
+    transform: translateX(50px);
+}
+
+.theme-container {
+    &:has(#checkbox:checked) {
+        background-color: var(--bg-dark);
+    }
+    &:has(#checkbox:checked) h1 {
+        color: var(--text-dark);
+    }
+}
+
+body.dark-mode {
+    background-color: var(--bg-dark);
+}
+body.dark-mode .theme-container h1 {
+    color: var(--text-dark);
+}
