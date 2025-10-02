@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #f4f4f9;
+    --text-color: #2c3e50;
+    --checkbox-stroke: #bdc3c7;
+    --checkbox-checked-bg: #2c3e50;
+    --checkbox-tick-color: #ffffff;
+    --font: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--background-color);
+    font-family: var(--font);
+    color: var(--text-color);
+}
+
+.checkbox-wrapper {
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+}
+
+.checkbox-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-wrapper .terms-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.checkbox-wrapper .terms-label .label-text {
+  margin-left: 12px;
+  line-height: 1;
+}
+
+.checkbox-wrapper .checkbox-svg {
+  width: 30px;
+  height: 30px;
+}
+
+.checkbox-wrapper .checkbox-box {
+  fill: transparent;
+  stroke: var(--checkbox-stroke);
+  stroke-dasharray: 800;
+  stroke-dashoffset: 0;
+  transition: fill 0.2s ease-in, stroke 0.3s ease-in;
+}
+
+.checkbox-wrapper .checkbox-tick {
+  stroke: var(--checkbox-tick-color);
+  stroke-dasharray: 172;
+  stroke-dashoffset: 172;
+  transition: stroke-dashoffset 0.4s cubic-bezier(0.45, 0, 0.55, 1) 0.1s;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + .terms-label .checkbox-svg {
+    animation: checkbox-bounce 0.3s ease-in-out;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + .terms-label .checkbox-box {
+  fill: var(--checkbox-checked-bg);
+  stroke: var(--checkbox-checked-bg);
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + .terms-label .checkbox-tick {
+  stroke-dashoffset: 0;
+}
+
+@keyframes checkbox-bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
