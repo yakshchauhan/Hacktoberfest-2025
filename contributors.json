@@ -206,5 +206,13 @@
     "bio": "passionate about crafting clean code, scalable systems, and intuitive user experiences.",
     "github_profile_url": "https://github.com/rumi20",
     "project_netlify_link": "https://rumi-loader.netlify.app/"
+  },
+  {
+    "name": "Rumi",
+    "occupation": "Full-Stack Web Developer",
+    "place": "Mumbai, India",
+    "bio": "passionate about crafting clean code, scalable systems, and intuitive user experiences.",
+    "github_profile_url": "https://github.com/rumi20",
+    "project_netlify_link": "https://rumi-input.netlify.app/"
   }
 ]
