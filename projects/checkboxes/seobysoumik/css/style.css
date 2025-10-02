@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #fff5e1 0%, #ffddc1 100%);
+    overflow: hidden;
+}
+
+@keyframes check-in {
+    0% {
+        transform: scale(0) rotate(90deg);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.2) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) rotate(45deg);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 153, 51, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 12px rgba(255, 153, 51, 0);
+    }
+}
+
+.dharma-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #5d4037;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.dharma-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkmark {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+    border: 3px solid #ff9933;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.dharma-checkbox:hover .checkmark {
+    transform: scale(1.1);
+    border-color: #ffc300;
+}
+
+.dharma-checkbox input[type="checkbox"]:focus-visible ~ .checkmark {
+    box-shadow:
+        0 0 0 4px #ffddc1,
+        0 0 0 6px #ffc300;
+}
+
+.dharma-checkbox input[type="checkbox"]:checked ~ .checkmark {
+    background-color: #ff9933;
+    border-color: #ff9933;
+    transform: scale(1.05) rotate(10deg);
+    animation: pulse-glow 0.8s ease-out;
+}
+
+.dharma-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+
+    left: 9px;
+    top: 4px;
+
+    width: 6px;
+    height: 12px;
+
+    border: solid white;
+    border-width: 0 3px 3px 0;
+
+    transform: scale(0) rotate(90deg);
+}
+
+.dharma-checkbox input[type="checkbox"]:checked ~ .checkmark:after {
+    animation: check-in 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s forwards;
+}
+
+.dharma-checkbox input[type="checkbox"]:disabled ~ .checkmark {
+    opacity: 0.5;
+    border-color: #a0a0a0;
+    cursor: not-allowed;
+    background-color: #e0e0e0;
+}
+
+.dharma-checkbox input[type="checkbox"]:disabled ~ .checkmark:hover {
+    transform: scale(1);
+    border-color: #a0a0a0;
+}
+
+.dharma-checkbox input[type="checkbox"]:disabled ~ * {
+    color: #a0a0a0;
+    cursor: not-allowed;
+}
