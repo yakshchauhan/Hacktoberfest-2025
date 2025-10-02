@@ -156,6 +156,39 @@ main {
     gap: 30px;
 }
 
+/* Make contributors list vertically scrollable with a visible scrollbar on smaller screens */
+#contributors-container {
+    max-height: 60vh; /* to keep hero and controls visible */
+    overflow-y: auto;
+    padding-right: 6px; /* room for scrollbar without shifting content */
+}
+
+/* Scrollbar styling (WebKit/Blink) */
+#contributors-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+#contributors-container::-webkit-scrollbar-track {
+    background: var(--card-bg);
+    border-radius: 8px;
+}
+
+#contributors-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    border: 2px solid var(--card-bg);
+}
+
+#contributors-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* Scrollbar styling (Firefox) */
+#contributors-container {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.25) var(--card-bg);
+}
+
 .contributor-card.hidden {
     display: none !important;
 }
