@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    /* A soft, dreamy animated gradient for the background */
+    background: linear-gradient(315deg, #f9c5d1, #a2d2ff, #f9d4a2);
+    background-size: 400% 400%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+/* Keyframes for the background animation */
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.input-container {
+    position: relative;
+    width: 250px;
+    margin: 40px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #4a4a4a;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background: transparent;
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 16px;
+    color: #8e8e8e;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #ccc;
+}
+
+.underline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    /* A beautiful gradient for the focus animation */
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    transition: width 0.4s ease;
+}
+
+/* == THE "HUGE" ANIMATION PART == */
+
+/* When the input is focused or has valid content, animate the label */
+.input:focus ~ .label,
+.input:valid ~ .label {
+    top: -20px;
+    font-size: 14px;
+    color: #ffafbd;
+    font-weight: 500;
+}
+
+/* When the input is focused, make the underline "draw" itself */
+.input:focus ~ .underline::before {
+    width: 100%;
+}
