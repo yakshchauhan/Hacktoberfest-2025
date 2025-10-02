@@ -126,5 +126,14 @@
     "bio": "Creating engaging and user-friendly web experiences.",
     "github_profile_url": "https://github.com/Tusharkumar200",
     "project_netlify_link": "https://neon-button-component.netlify.app/"
-  }
+  },
+  {
+  "name": "Shivam Kumar",
+  "occupation": "CSE(AI-ML) Student",
+  "place": "Bhilai, India",
+  "bio": "Open-source enthusiast contributing to Hacktoberfest!",
+  "github_profile_url": "https://github.com/Shivambhagatt",
+  "project_netlify_link": "https://shivambhagat-hacktoberfest.netlify.app/"
+}
 ]
+
