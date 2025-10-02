@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f9;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    color: #222;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+button > span {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+button:hover > span {
+    transform: translateX(-5px);
+}
+
+
+button > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+button:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    border-color: #ccc;
+}
+
+button:hover svg {
+    transform: translateX(5px);
+}
+
+button:active {
+    transform: scale(0.97) translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
