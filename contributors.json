@@ -168,7 +168,7 @@
     "project_netlify_link": "https://aditi-input.netlify.app/"
   },
   {
-   "name": "Tushar Kumar",
+    "name": "Tushar Kumar",
     "occupation": "Full-Stack Web Developer",
     "place": "Chennai, India",
     "bio": "Creating engaging and user-friendly web experiences.",
@@ -294,5 +294,13 @@
     "bio": "SEO Specialist with 3 years of experience driving organic growth and improving search visibility. Focused on the technical backbone of SEO, data analysis, and content strategy to enhance website performance and user experience.",
     "github_profile_url": "https://github.com/seobysoumik",
     "project_netlify_link": "https://soumik-radio-button.netlify.app/"
+  },
+  {
+    "name": "Jash Shah",
+    "occupation": "Applied Innovator",
+    "place": "Mumbai, India",
+    "bio": "I'm an Applied Innovator and Google Student Ambassador with a strong foundation in full-stack development, IoT, and deep learning. My passion is translating complex research into scalable, real-world solutions. I thrive on teaching, leading technical teams, and driving projects that bridge technology with social good.",
+    "github_profile_url": "https://github.com/shahjash1634",
+    "project_netlify_link": "https://storm-switch.netlify.app/"
   }
 ]
