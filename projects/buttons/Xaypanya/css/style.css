@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: #000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    font-weight: 900;
+}
+
+.subtitle {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #666;
+    margin-bottom: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+}
+
+.button-showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+/* Base Brutal Button Styles */
+.brutal-btn {
+    position: relative;
+    width: 200px;
+    padding: 18px 32px;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #000;
+    border-radius: 12px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    box-shadow: 4px 4px 0 #000;
+    font-family: 'Nunito', sans-serif;
+}
+
+.brutal-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.brutal-btn:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #000;
+}
+
+.brutal-btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 #000;
+}
+
+/* Primary Button */
+.brutal-primary {
+    background-color: #00ff00;
+    color: #000;
+    border-color: #000;
+}
+
+.brutal-primary:hover {
+    background-color: #00cc00;
+}
+
+/* Secondary Button */
+.brutal-secondary {
+    background-color: #ff00ff;
+    color: #fff;
+    border-color: #000;
+}
+
+.brutal-secondary:hover {
+    background-color: #cc00cc;
+}
+
+/* Accent Button */
+.brutal-accent {
+    background-color: #ffff00;
+    color: #000;
+    border-color: #000;
+}
+
+.brutal-accent:hover {
+    background-color: #cccc00;
+}
+
+/* Danger Button */
+.brutal-danger {
+    background-color: #ff0000;
+    color: #fff;
+    border-color: #000;
+}
+
+.brutal-danger:hover {
+    background-color: #cc0000;
+}
+
+/* Success Button */
+.brutal-success {
+    background-color: #00ff00;
+    color: #000;
+    border-color: #000;
+}
+
+.brutal-success:hover {
+    background-color: #00cc00;
+}
+
+/* Outlined Button */
+.brutal-outlined {
+    background-color: transparent;
+    color: #000;
+    border-color: #000;
+}
+
+.brutal-outlined:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Warning Button */
+.brutal-warning {
+    background-color: #ffa500;
+    color: #000;
+    border-color: #000;
+}
+
+.brutal-warning:hover {
+    background-color: #cc8400;
+}
+
+/* Info Button */
+.brutal-info {
+    background-color: #00ffff;
+    color: #000;
+    border-color: #000;
+}
+
+.brutal-info:hover {
+    background-color: #00cccc;
+}
+
+/* Dark Button */
+.brutal-dark {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.brutal-dark:hover {
+    background-color: #333;
+}
+
+.info {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid #000;
+    border-radius: 12px;
+    box-shadow: 4px 4px 0 #000;
+}
+
+.info p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.info strong {
+    color: #000;
+    font-weight: 900;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .button-showcase {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .brutal-btn {
+        width: 100%;
+    }
+
+    h1 {
+        letter-spacing: -1px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brutal-btn {
+        padding: 16px 24px;
+        font-size: 14px;
+    }
+
+    .subtitle {
+        margin-bottom: 40px;
+    }
+}

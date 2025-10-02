@@ -168,12 +168,20 @@
     "project_netlify_link": "https://aditi-input.netlify.app/"
   },
   {
-    "name": "Tushar Kumar",
+   "name": "Tushar Kumar",
     "occupation": "Full-Stack Web Developer",
     "place": "Chennai, India",
     "bio": "Creating engaging and user-friendly web experiences.",
     "github_profile_url": "https://github.com/Tusharkumar200",
     "project_netlify_link": "https://neon-button-component.netlify.app/"
+  },
+  {
+    "name": "Xaypanya Phongsa",
+    "occupation": "Software Engineer",
+    "place": "Bangkok, Thailand",
+    "bio": "Frontend developer passionate about creating engaging user experiences with modern web technologies.",
+    "github_profile_url": "https://github.com/Xaypanya",
+    "project_netlify_link": "https://neobrutalism-button.netlify.app/"
   },
   {
     "name": "Rumi",
