@@ -224,6 +224,30 @@
     "project_netlify_link": "https://aditi-input.netlify.app/"
   },
   {
+    "name": "Tushar Kumar",
+    "occupation": "Full-Stack Web Developer",
+    "place": "Chennai, India",
+    "bio": "Creating engaging and user-friendly web experiences.",
+    "github_profile_url": "https://github.com/Tusharkumar200",
+    "project_netlify_link": "https://neon-button-component.netlify.app/"
+  },
+  {
+    "name": "Shivam Kumar",
+    "occupation": "CSE(AI-ML) Student",
+    "place": "Bhilai, India",
+    "bio": "Open-source enthusiast contributing to Hacktoberfest!",
+    "github_profile_url": "https://github.com/Shivambhagatt",
+    "project_netlify_link": "https://shivambhagat-hacktoberfest.netlify.app/"
+  },
+  {
+    "name": "Xaypanya Phongsa",
+    "occupation": "Software Engineer",
+    "place": "Bangkok, Thailand",
+    "bio": "Frontend developer passionate about creating engaging user experiences with modern web technologies.",
+    "github_profile_url": "https://github.com/Xaypanya",
+    "project_netlify_link": "https://neobrutalism-button.netlify.app/"
+  },
+  {
     "name": "Rumi",
     "occupation": "Full-Stack Web Developer",
     "place": "Mumbai, India",
@@ -320,11 +344,28 @@
     "project_netlify_link": "https://soumik-input.netlify.app/"
   },
   {
+
     "name": "Abhijeet Patil",
     "occupation": "Full Stack Developer",
     "place": "Mumbai, India",
     "bio": "Crafting visually stunning, interactive, and accessible web components. Passionate about modern CSS, micro-interactions, and elevating user experience through design.",
     "github_profile_url": "https://github.com/abhijeetpatilrm",
     "project_netlify_link": "https://abhijeetpatil-toggleswitch.netlify.app/"
+
+    "name": "Soumik Nandan",
+    "occupation": "SEO Specialist",
+    "place": "Beldanga, India",
+    "bio": "SEO Specialist with 3 years of experience driving organic growth and improving search visibility. Focused on the technical backbone of SEO, data analysis, and content strategy to enhance website performance and user experience.",
+    "github_profile_url": "https://github.com/seobysoumik",
+    "project_netlify_link": "https://soumik-radio-button.netlify.app/"
+  },
+  {
+    "name": "Jash Shah",
+    "occupation": "Applied Innovator",
+    "place": "Mumbai, India",
+    "bio": "I'm an Applied Innovator and Google Student Ambassador with a strong foundation in full-stack development, IoT, and deep learning. My passion is translating complex research into scalable, real-world solutions. I thrive on teaching, leading technical teams, and driving projects that bridge technology with social good.",
+    "github_profile_url": "https://github.com/shahjash1634",
+    "project_netlify_link": "https://storm-switch.netlify.app/"
+
   }
 ]
