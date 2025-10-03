@@ -342,5 +342,13 @@
     "bio": "I'm an Applied Innovator and Google Student Ambassador with a strong foundation in full-stack development, IoT, and deep learning. My passion is translating complex research into scalable, real-world solutions. I thrive on teaching, leading technical teams, and driving projects that bridge technology with social good.",
     "github_profile_url": "https://github.com/shahjash1634",
     "project_netlify_link": "https://storm-switch.netlify.app/"
+  },
+  {
+    "name": "Manroop Kaur",
+    "occupation": "Student",
+    "place": "Karnal, India",
+    "bio": "I am currently a final year student and passionate about learning new and challenging things.",
+    "github_profile_url": "https://github.com/manroop04",
+    "project_netlify_link": "https://scratch-card-00.netlify.app/"
   }
 ]
