@@ -342,5 +342,13 @@
     "bio": "I'm an Applied Innovator and Google Student Ambassador with a strong foundation in full-stack development, IoT, and deep learning. My passion is translating complex research into scalable, real-world solutions. I thrive on teaching, leading technical teams, and driving projects that bridge technology with social good.",
     "github_profile_url": "https://github.com/shahjash1634",
     "project_netlify_link": "https://storm-switch.netlify.app/"
+  },
+  {
+    "name": "Vishwas Naveen",
+    "occupation": "Student",
+    "place": "Bangalore, India",
+    "bio": "First-year AI/ML engineering student passionate about web development, hackathons, and building practical projects that solve real-world problems. Experienced in collaborating with teams on innovative ideas, from IoT prototypes to crowd management systems, while continuously exploring new technologies to grow as a developer.",
+    "github_profile_url": "https://github.com/sodium16",
+    "project_netlify_link": "https://sodium-button.netlify.app/"
   }
 ]
