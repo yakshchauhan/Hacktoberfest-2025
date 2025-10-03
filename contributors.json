@@ -342,5 +342,13 @@
     "bio": "I'm an Applied Innovator and Google Student Ambassador with a strong foundation in full-stack development, IoT, and deep learning. My passion is translating complex research into scalable, real-world solutions. I thrive on teaching, leading technical teams, and driving projects that bridge technology with social good.",
     "github_profile_url": "https://github.com/shahjash1634",
     "project_netlify_link": "https://storm-switch.netlify.app/"
-  }
+  },
+  {
+  "name": "Sumedh Udupa",
+  "occupation": "Full Stack Developer",
+  "place": "Bangalore, India",
+  "bio": "passionate about technology and open-source.",
+  "github_profile_url": "https://github.com/sumedhudupa",
+  "project_netlify_link": "https://weightlifter.netlify.app/"
+}
 ]
