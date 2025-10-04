@@ -376,6 +376,14 @@
     "project_netlify_link": "https://storm-switch.netlify.app/"
   },
   {
+    "name": "Srijit Dey",
+    "occupation": "Web Developer",
+    "place": "Kolkata, India",
+    "bio": "A passionate web developer with a knack for creating interactive applications.",
+    "github_profile_url": "[https://github.com/zeropse](https://github.com/zeropse)",
+    "project_netlify_link": "[https://retro-boot-loader.netlify.app/](https://retro-boot-loader.netlify.app/)"
+  },
+  {
   "name": "Sumedh Udupa",
   "occupation": "Full Stack Developer",
   "place": "Bangalore, India",
