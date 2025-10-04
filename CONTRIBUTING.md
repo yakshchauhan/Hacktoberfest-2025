@@ -115,7 +115,7 @@ To showcase a live version of your work, you need to deploy **only your componen
 
     For example:
 
-    ```json
+    ```txt
     [
         ...
         {

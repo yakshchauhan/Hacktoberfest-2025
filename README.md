@@ -114,7 +114,7 @@ To showcase your work, you need to deploy **only your component's folder** to Ne
 
     For example:
 
-    ```json
+    ```txt
     [
         ...
         {
