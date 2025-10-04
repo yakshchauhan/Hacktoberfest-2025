@@ -376,6 +376,14 @@
     "project_netlify_link": "https://storm-switch.netlify.app/"
   },
   {
+    "name": "Vishwas Naveen",
+    "occupation": "Student",
+    "place": "Bangalore, India",
+    "bio": "First-year AI/ML engineering student passionate about web development, hackathons, and building practical projects that solve real-world problems. Experienced in collaborating with teams on innovative ideas, from IoT prototypes to crowd management systems, while continuously exploring new technologies to grow as a developer.",
+    "github_profile_url": "https://github.com/sodium16",
+    "project_netlify_link": "https://sodium-button.netlify.app/"
+  },
+  {
     "name": "Srijit Dey",
     "occupation": "Web Developer",
     "place": "Kolkata, India",
