@@ -368,6 +368,14 @@
     "project_netlify_link": "https://storm-switch.netlify.app/"
   },
   {
+    "name": "Ankit Jha",
+    "occupation": "Software Developer at juspay.in",
+    "place": "India",
+    "bio": "Passionate full-stack developer with expertise in modern web technologies. Love creating beautiful UI components and contributing to open source projects during Hacktoberfest!",
+    "github_profile_url": "https://github.com/ankit6686510",
+    "project_netlify_link": "https://glassmorphism-buttons-ankit.netlify.app/"
+  },
+  {
     "name": "Anish Kalbhor",
     "occupation": "Full Stack Developer",
     "place": "Mumbai, India",
