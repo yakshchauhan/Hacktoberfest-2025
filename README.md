@@ -114,7 +114,7 @@ To showcase your work, you need to deploy **only your component's folder** to Ne
 
     For example:
 
-    ```json
+    ```txt
     [
         ...
         {
@@ -147,4 +147,5 @@ A huge thank you to all the wonderful people who have contributed to this projec
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 Thank you for your contribution! **Happy Hacking!** 🚀
+
 
