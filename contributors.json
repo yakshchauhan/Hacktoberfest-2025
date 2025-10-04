@@ -368,28 +368,37 @@
     "project_netlify_link": "https://storm-switch.netlify.app/"
   },
   {
+    "name": "Anish Kalbhor",
+    "occupation": "Full Stack Developer",
+    "place": "Mumbai, India",
+    "bio": "I'm a Full Stack Developer with a strong foundation in web development, IoT, and deep learning. My passion is translating complex research into scalable, real-world solutions. I thrive on teaching, leading technical teams, and driving projects that bridge technology with social good.",
+    "github_profile_url": "https://github.com/anishvkalbhor",
+    "project_netlify_link": "https://magic-toggle.netlify.app/"
+  },
+  {
     "name": "Vedant Vijay",
     "occupation": "Full-Stack Web Developer",
     "place": "Chennai, India",
     "bio": "likes to code and build things",
     "github_profile_url": "https://github.com/vedantvijay",
     "project_netlify_link": "https://sparkling-cranachan-917d19.netlify.app/"
-  },{
+  },
+  {
     "name": "Vedant Vijay",
     "occupation": "Full-Stack Web Developer",
     "place": "Chennai, India",
     "bio": "likes to code and build things",
     "github_profile_url": "https://github.com/vedantvijay",
     "project_netlify_link": "zesty-longma-cc8a85.netlify.app"
-  },{
+  },
+  {
     "name": "Vedant Vijay",
     "occupation": "Full-Stack Web Developer",
     "place": "Chennai, India",
     "bio": "likes to code and build things",
     "github_profile_url": "https://github.com/vedantvijay",
     "project_netlify_link": "frabjous-sherbet-1521a2.netlify.app"
-  }
-  ,
+  },
   {
     "name":"Chaitanya Lahari",
     "occupation":"student",
@@ -398,8 +407,7 @@
     "github_profile_url":"github.com/gurram-lahari",
     "project_netlify_link":"https://merry-syrniki-c09fee.netlify.app/"
 
-  }
-  ,
+  },
   {
     "name":"Chaitanya Lahari",
     "occupation":"student",
@@ -407,7 +415,6 @@
     "bio":"Aspiring web developer passionate about creating interactive and user-friendly web experiences.",
     "github_profile_url":"github.com/gurram-lahari",
     "project_netlify_link":"https://tiny-sprite-7f2139.netlify.app/"
-
   },
   {
     "name":"Chaitanya Lahari",
@@ -416,6 +423,5 @@
     "bio":"Aspiring web developer passionate about creating interactive and user-friendly web experiences.",
     "github_profile_url":"github.com/gurram-lahari",
     "project_netlify_link":"https://lighthearted-crisp-c0f9b6.netlify.app/"
-
   }
 ]
