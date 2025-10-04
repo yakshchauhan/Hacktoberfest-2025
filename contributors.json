@@ -368,6 +368,22 @@
     "project_netlify_link": "https://storm-switch.netlify.app/"
   },
   {
+    "name": "Gunn Arora",
+    "occupation": "Software Developer Intern",
+    "place": "Punjab, India",
+    "bio": "I'm a Computer Science student who loves building web projects and exploring AI & ML. I've worked on hackathons like Google Jalandhar Hackathon, contributed to open-source projects and co-authored Midnight Snacks and other anthologies. Coding, learning, and creating useful things keeps me going!",
+    "github_profile_url": "https://github.com/gunn333",
+    "project_netlify_link": "https://starry-toggle.netlify.app"
+  },
+  {
+    "name": "Gunn Arora",
+    "occupation": "Software Developer Intern",
+    "place": "Punjab, India",
+    "bio": "I'm a Computer Science student who loves building web projects and exploring AI & ML. I've worked on hackathons like Google Jalandhar Hackathon, contributed to open-source projects and co-authored Midnight Snacks and other anthologies. Coding, learning, and creating useful things keeps me going!",
+    "github_profile_url": "https://github.com/gunn333",
+    "project_netlify_link": "https://dreamy-trifle-c6e34b.netlify.app/"
+  },
+  {
     "name": "Manroop Kaur",
     "occupation": "Student",
     "place": "Karnal, India",
@@ -448,6 +464,3 @@
     "project_netlify_link":"https://lighthearted-crisp-c0f9b6.netlify.app/"
   }
 ]
-
-
-
