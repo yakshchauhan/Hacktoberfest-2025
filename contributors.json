@@ -368,6 +368,13 @@
     "project_netlify_link": "https://storm-switch.netlify.app/"
   },
   {
+    "name": "Akash Dhar Dubey",
+    "occupation": "Web Developer",
+    "place": "India",
+    "bio": "Loves creating interactive UI components!",
+    "github_profile_url": "https://github.com/AKASHDHARDUBEY",
+    "project_netlify_link": "https://playful-pasca-51c6de.netlify.app/"
+  },
     "name": "Ankit Jha",
     "occupation": "Software Developer at juspay.in",
     "place": "India",
@@ -433,3 +440,6 @@
     "project_netlify_link":"https://lighthearted-crisp-c0f9b6.netlify.app/"
   }
 ]
+
+
+
