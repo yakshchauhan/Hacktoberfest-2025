@@ -456,12 +456,20 @@
     "project_netlify_link": "https://storm-switch.netlify.app/"
   },
   {
+    "name": "Karthik Srivathsa P L",
+    "occupation": "Student",
+    "place": "Bengaluru, India",
+    "bio": "CSE Student getting into open-source and little experience in Web Dvelopment",
+    "github_profile_url": "https://github.com/karthik-srivathsa-05",
+    "project_netlify_link": "https://highlevel-radio-button.netlify.app"
+  },
+  {
     "name": "Srijit Dey",
     "occupation": "Web Developer",
     "place": "Kolkata, India",
     "bio": "A passionate web developer with a knack for creating interactive applications.",
-    "github_profile_url": "[https://github.com/zeropse](https://github.com/zeropse)",
-    "project_netlify_link": "[https://retro-boot-loader.netlify.app/](https://retro-boot-loader.netlify.app/)"
+    "github_profile_url": "https://github.com/zeropse",
+    "project_netlify_link": "https://retro-boot-loader.netlify.app/"
   },
   {
     "name": "Gunn Arora",
@@ -528,19 +536,27 @@
     "project_netlify_link": "https://cheery-valkyrie-67382a.netlify.app/"
   },
   {
-  "name": "Sumedh Udupa",
-  "occupation": "Full Stack Developer",
-  "place": "Bangalore, India",
-  "bio": "passionate about technology and open-source.",
-  "github_profile_url": "https://github.com/sumedhudupa",
-  "project_netlify_link": "https://sparkle-me.netlify.app/"
+    "name": "Sumedh Udupa",
+    "occupation": "Full Stack Developer",
+    "place": "Bangalore, India",
+    "bio": "passionate about technology and open-source.",
+    "github_profile_url": "https://github.com/sumedhudupa",
+    "project_netlify_link": "https://sparkle-me.netlify.app/"
   },
   {
-  "name": "Sumedh Udupa",
-  "occupation": "Full Stack Developer",
-  "place": "Bangalore, India",
-  "bio": "passionate about technology and open-source.",
-  "github_profile_url": "https://github.com/sumedhudupa",
-  "project_netlify_link": "https://rotate-checkbox.netlify.app/"
+    "name": "Sumedh Udupa",
+    "occupation": "Full Stack Developer",
+    "place": "Bangalore, India",
+    "bio": "passionate about technology and open-source.",
+    "github_profile_url": "https://github.com/sumedhudupa",
+    "project_netlify_link": "https://rotate-checkbox.netlify.app/"
+  },
+  {
+    "name": "Harshita Gupta",
+    "occupation": "Aspiring Software Developer",
+    "place": "India",
+    "bio": "Love building UI and learning Java & JS 🚀",
+    "github_profile_url": "https://github.com/hershiee",
+    "project_netlify_link": "https://fancy-button-harshita.netlify.app/"
   }
 ]
